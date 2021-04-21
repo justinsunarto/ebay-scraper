@@ -10,9 +10,12 @@ listings.each do |listing|
 
     # extract the information into the product hash
     product['title'] = listing.at_css('h3.s-item__title')&.text
+    # '&'' symbol at the end of the row means return nill if there is no 
+    # required value available
 
     # extract the price
     product['price'] = listing.at_css('.s-item__price')&.text
+
 
     # extract the listing URL
     item_link = listing.at_css('a.s-item__link')
