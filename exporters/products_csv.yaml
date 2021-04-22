@@ -1,0 +1,18 @@
+# export all product to csv
+exporter_name: products_json
+exporter_type: json
+collection: products
+start_on_job_done: true
+fields:
+  - header: "gid"
+    path: "_gid"
+  - header: "created at"
+    path: "_created at"
+  - header: "title"
+    path: "title"
+  - header: "price"
+    path: "price"
+  - header: "feedback"
+    path: "feedback"
+  - header: "seller"
+    path: "seller"
