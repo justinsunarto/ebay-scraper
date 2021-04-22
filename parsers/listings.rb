@@ -16,7 +16,6 @@ listings.each do |listing|
     # extract the price
     product['price'] = listing.at_css('.s-item__price')&.text
 
-
     # extract the listing URL
     item_link = listing.at_css('a.s-item__link')
     product['url'] = item_link['href'] unless item_link.nil?
