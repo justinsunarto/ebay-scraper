@@ -1,6 +1,6 @@
 # export all product to csv
-exporter_name: products_json
-exporter_type: json
+exporter_name: products_csv
+exporter_type: csv
 collection: products
 start_on_job_done: true
 fields:
